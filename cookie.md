@@ -20,5 +20,5 @@
 ### 세션 쿠키 (session Cookie)
 - 통신이 연결된 상태에서만 사용하는 점이 특징
 
-### 지속 쿠기 (pesistent Cookie)
+### 지속 쿠키 (pesistent Cookie)
 -  하드디스크에 직접 저장
