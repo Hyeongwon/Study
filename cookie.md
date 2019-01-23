@@ -8,14 +8,14 @@
 ### Http
 - TCP + UDP를 사용하며, 80번 포트 사용
 
-### SateLess
+### StateLess
 - Client의 이전 상태를 기록하지 않는 접속
 
-### Connectionless 
+### ConnectionLess 
 - 클라이언트가 서버에 요청을 하고 서버가 클라이언트에게 응답을 보내면 접속을 끊는다
 
 
-## 쿠기 
+## 쿠키
 
 ### 세션 쿠키 (session Cookie)
 - 통신이 연결된 상태에서만 사용하는 점이 특징
