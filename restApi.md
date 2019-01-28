@@ -45,7 +45,7 @@
 
 - cache
 
-- **uniform interface
+- **uniform interface**
 
 - layered system
 
