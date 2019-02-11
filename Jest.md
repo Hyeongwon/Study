@@ -13,7 +13,8 @@
 describe('PhoneInputScreen 컴포넌트', () => {
   describe('PhoneInputScreen 컴포넌트를 생성할 수 있다.', () => {
     it('설정없이 PhoneInputScreen을 생상하면, default state를 가진 PhoneInputScreen을 생성한다.', () => {
-      // Given
+     
+     // Given
       const expected = {
         phoneNumber: undefined,
         qualified: false,
