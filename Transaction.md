@@ -53,9 +53,9 @@ $userB->account->amount += 1000;
 
 DB::transaction(function () use ($userA, $userB){
     try {
-        $userA->save();
+        $userA->account->save();
         throw new \Exception();
-        $userB->save();
+        $userB->account->save();
     } catch (QueryException $e) {
         throw $e;
     }
