@@ -40,9 +40,9 @@
     $userA->account->amount -= 1000;
     $userB->account->amount += 1000;
 
-    $userA->save();
+    $userA->account->save();
     throw new \Exception();
-    $userB->save();
+    $userB->account->save();
 ```
 ![2019-03-05 8 36 40](https://user-images.githubusercontent.com/14510347/53804170-2593f100-3f8a-11e9-8f8a-ceb552e2acb7.png)
 
