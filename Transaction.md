@@ -100,3 +100,6 @@ public function transaction(Closure $callback, $attempts = 1)
 }
 ```
 
+### Commit 중 실패하면??
+![helloworld-407507-6](https://user-images.githubusercontent.com/14510347/53804278-73a8f480-3f8a-11e9-9755-5d87d4972c2c.png)
+
