@@ -29,7 +29,7 @@
 * 작업단위 (신규유저가 계좌를 만든다.)
 ```php
 $newAccount = Account::create([
-    'account_name' => 'AAAA' 
+    'account_number' => 'AAAA' 
 ]);
 
 $newUser = User::create([
