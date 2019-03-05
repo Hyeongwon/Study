@@ -23,6 +23,9 @@
 
 ### 예제
 
+* DB
+![2019-03-05 4 10 09](https://user-images.githubusercontent.com/14510347/53787363-fbc6d400-3f61-11e9-9726-fcf88fe3210b.png)
+
 
 ### Laravel 트랜잭션
 ```php
