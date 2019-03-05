@@ -26,16 +26,40 @@
 * DB 스키마
 ![2019-03-05 4 10 09](https://user-images.githubusercontent.com/14510347/53787363-fbc6d400-3f61-11e9-9726-fcf88fe3210b.png)
 
-* 작업단위 (신규유저가 계좌를 만든다.)
+* 작업단위 (A가 B에게 1000원 계좌이체)
 ```php
-$newAccount = Account::create([
-    'account_number' => 'AAAA' 
-]);
+    $userA->account->amount -= 1000;
+    $userB->account->amount += 1000;
 
-$newUser = User::create([
-    'user_name' => 'user_name',
-    'account_id' => $account_number->id,
-]);
+    $userA->save();
+    $userB->save();
+```
+
+* 트렌잭션 없이 계좌이체 도중 문제 발생
+```php
+    $userA->account->amount -= 1000;
+    $userB->account->amount += 1000;
+
+    $userA->save();
+    throw new \Exception();
+    $userB->save();
+```
+
+* 트랜젹션이 걸린 상황에서 문제 발생
+
+```php
+$userA->account->amount -= 1000;
+$userB->account->amount += 1000;
+
+DB::transaction(function () use ($userA, $userB){
+    try {
+        $userA->save();
+        throw new \Exception();
+        $userB->save();
+    } catch (QueryException $e) {
+        throw $e;
+    }
+});
 ```
 
 
