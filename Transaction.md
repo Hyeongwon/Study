@@ -26,7 +26,7 @@
 * DB 스키마
 ![2019-03-05 4 10 09](https://user-images.githubusercontent.com/14510347/53787363-fbc6d400-3f61-11e9-9726-fcf88fe3210b.png)
 
-* 작업단위 (신규유저가 계좌를 )
+* 작업단위 (신규유저가 계좌를 만든다.)
 ```php
 $newAccount = Account::create([
     'account_name' => 'AAAA' 
