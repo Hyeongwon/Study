@@ -24,7 +24,7 @@
 ### 예제
 
 * DB 스키마
-![2019-03-05 4 10 09](https://user-images.githubusercontent.com/14510347/53787363-fbc6d400-3f61-11e9-9726-fcf88fe3210b.png)
+![2019-03-05 9 13 22](https://user-images.githubusercontent.com/14510347/53804718-9a1b5f80-3f8b-11e9-973e-d17f6d4fa6da.png)
 
 * 작업단위 (A가 B에게 1000원 계좌이체)
 ```php
