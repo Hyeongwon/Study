@@ -34,7 +34,7 @@ $newAccount = Account::create([
 
 $newUser = User::create([
     'user_name' => 'user_name',
-    'account_id' => $newAcct->id,
+    'account_id' => $account_number->id,
 ]);
 ```
 
