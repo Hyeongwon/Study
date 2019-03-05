@@ -31,8 +31,8 @@
     $userA->account->amount -= 1000;
     $userB->account->amount += 1000;
 
-    $userA->save();
-    $userB->save();
+    $userA->account->save();
+    $userB->account->save();
 ```
 
 * 트렌잭션 없이 계좌이체 도중 문제 발생
