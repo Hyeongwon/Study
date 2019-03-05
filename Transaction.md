@@ -20,3 +20,21 @@
 
 ### 트랜잭션의 Commit, Rollback
 
+
+### Laravel 트랜잭션
+
+```php
+public function transaction(Closure $callback)
+{
+  try {
+    return tap($callback($this), function ($result) {
+      $this->commit();
+    });
+  } catch (Throwable $e) {
+      $this->rollBack();
+      throw $e;
+    }
+  }
+}
+```
+
