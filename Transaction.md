@@ -28,6 +28,17 @@
 
 * 
 
+```php
+$newAccount = Account::create([
+    'account_name' => 'AAAA' 
+]);
+
+$newUser = User::create([
+    'user_name' => 'user_name',
+    'account_id' => $newAcct->id,
+]);
+```
+
 
 ### Laravel 트랜잭션
 ```php
