@@ -44,6 +44,10 @@
     throw new \Exception();
     $userB->save();
 ```
+![2019-03-05 8 36 40](https://user-images.githubusercontent.com/14510347/53804170-2593f100-3f8a-11e9-8f8a-ceb552e2acb7.png)
+
+
+
 
 * 트랜젹션이 걸린 상황에서 문제 발생
 
@@ -61,6 +65,7 @@ DB::transaction(function () use ($userA, $userB){
     }
 });
 ```
+![2019-03-05 8 27 05](https://user-images.githubusercontent.com/14510347/53804196-393f5780-3f8a-11e9-96c8-a4daa7ed6a97.png)
 
 
 ### Laravel 트랜잭션
