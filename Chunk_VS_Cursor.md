@@ -3,7 +3,7 @@
 
 ### Performance Test
 
-- 데이터 Laravel 기본 User 사용
+- 데이터 Laravel 기본 User 사용 (5000건)
 
 * get 결과
 
@@ -15,12 +15,17 @@
 
 |           |Time(sec) |Memory(MB) |
 |-----------|----------|-----------|
-|get()      |          |           |
-|chunk(100) |          |           |
-|cursor()   |          |           |
+|get()      | 0.17     | 22        |
+|chunk(100) | 0.38     | 12        |
+|cursor()   | 0.16     | 14        |
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+
+100,000 records:
+
+|           |Time(sec) |Memory(MB) |
+|--------------|-------------|-----------|
+|get()         |        0.8  |     132   |
+| chunk(100)   |       19.9  |      10   |
+| chunk(1000)  |        2.3  |      12   |
+| chunk(10000) |        1.1  |      34   |
+| cursor()     |        0.5  |      45   |
