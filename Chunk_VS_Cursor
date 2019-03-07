@@ -1,0 +1,12 @@
+## Chunk vs Cursor
+
+
+### Performance Test
+
+- 데이터 Laravel 기본 User 사용
+
+* get 결과
+
+* chunk 결과
+
+* cursor 결과
