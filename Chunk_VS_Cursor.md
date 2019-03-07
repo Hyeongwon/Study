@@ -1,5 +1,13 @@
 ## Chunk vs Cursor
 
+### 실제 쿼리
+Chunk
+```mysql
+select * from `users` where `users` limit 100 offset 0"
+...
+```
+cursor
+
 
 ### Performance Test
 
