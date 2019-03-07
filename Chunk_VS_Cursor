@@ -11,13 +11,6 @@
 
 * cursor 결과
 
-10,000 records:
-|           |Time(sec) |Memory(MB) |
-|-----------|----------|-----------|
-|get()      |          |           |
-|chunk(100) |          |           |
-|cursor()   |          |           |
-
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
