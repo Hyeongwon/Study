@@ -10,3 +10,10 @@
 * chunk 결과
 
 * cursor 결과
+
+10,000 records:
+|           |Time(sec) |Memory(MB) |
+|-----------|----------|-----------|
+|get()      |          |           |
+|chunk(100) |          |           |
+|cursor()   |          |           |
